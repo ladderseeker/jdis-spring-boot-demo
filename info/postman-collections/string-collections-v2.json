@@ -1,0 +1,45 @@
+{
+    "info": {
+        "_postman_id": "66af7bd1-8ee1-40e4-a1bc-f2582fe7a61f",
+        "name": "RedisString",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "getProgrammerAsString'",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "http://localhost:8080/programmer-string/1"
+            },
+            "response": []
+        },
+        {
+            "name": "AddProgrammerAsString",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"1\" , \"name\":\"Programmer\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmer-string/"
+            },
+            "response": []
+        }
+    ]
+}

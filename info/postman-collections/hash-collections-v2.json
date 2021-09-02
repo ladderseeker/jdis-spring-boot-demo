@@ -1,0 +1,99 @@
+{
+    "info": {
+        "_postman_id": "9e7e5bff-a24c-4667-8013-32c9c5020093",
+        "name": "RedisHash",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "addProgrammer",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"20\" , \"name\":\"Programmer\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-hash/"
+            },
+            "response": []
+        },
+        {
+            "name": "getProgrammer",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"10\" , \"name\":\"Programmer\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-hash/20"
+            },
+            "response": []
+        },
+        {
+            "name": "getAllProgrammers",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"10\" , \"name\":\"Programmer\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-hash"
+            },
+            "response": []
+        },
+        {
+            "name": "DeleteProgrammer",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": "http://localhost:8080/programmers-hash/10"
+            },
+            "response": []
+        },
+        {
+            "name": "UpdateProgrammer",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"20\" , \"name\":\"Programmer1\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-hash/"
+            },
+            "response": []
+        }
+    ]
+}

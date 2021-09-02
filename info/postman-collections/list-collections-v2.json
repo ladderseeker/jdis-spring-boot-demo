@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "18c21060-7f3f-4266-bb9f-723ee6ed4264",
+        "name": "RedisList",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "addProgrammerToList",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"20\" , \"name\":\"Programmerlist\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-list/"
+            },
+            "response": []
+        },
+        {
+            "name": "getProgrammersList",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"20\" , \"name\":\"Programmerlist\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-list/"
+            },
+            "response": []
+        },
+        {
+            "name": "getProgrammersListCount",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": \"20\" , \"name\":\"Programmerlist\" , \"company\":\"sdk\"}"
+                },
+                "url": "http://localhost:8080/programmers-list/count"
+            },
+            "response": []
+        }
+    ]
+}

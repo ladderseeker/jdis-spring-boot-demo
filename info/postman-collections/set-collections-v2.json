@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "c7b73d73-bc63-432d-a299-c01acb6d5548",
+        "name": "RedisSet",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "getProgrammersSet",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "[\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    }\n]"
+                },
+                "url": "http://localhost:8080/programmers-set/"
+            },
+            "response": []
+        },
+        {
+            "name": "IsProgrammerInList",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    }\n"
+                },
+                "url": "http://localhost:8080/programmers-set/member"
+            },
+            "response": []
+        },
+        {
+            "name": "addProgrammerToSet",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "[\n    {\n        \"id\": 10,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Programmerlist\",\n        \"company\": \"sdk\"\n    }\n]"
+                },
+                "url": "http://localhost:8080/programmers-set/"
+            },
+            "response": []
+        }
+    ]
+}
